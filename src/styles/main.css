@@ -1,0 +1,52 @@
+.parent-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper {
+  margin: 20px 30px;
+  width: 800px;
+  height: 100%;
+  background: white;
+}
+
+.bio-wrapper {
+  padding: 20px 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: white;
+}
+
+.fname {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bio-dets {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-btn {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 8px 0px;
+  border-radius: 10px;
+  background: #273c75;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

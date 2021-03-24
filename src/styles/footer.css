@@ -1,0 +1,27 @@
+.footer-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #273c75;
+  height: 4vh;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f5f6fa;
+}
+
+a {
+  margin: 0 8px 0 5px;
+  text-decoration: none;
+  color: #f5f6fa;
+}
