@@ -7,12 +7,14 @@ const Compiler = (props) => {
       <div className="bio-wrapper">
         <div className="personal-wrapper">
           <div className="p-name">{props.data.fullName}Rabab Ahmed</div>
+          <div className="divider"></div>
           <div className="p-pdets">{props.data.email}rababahmed6@gmail.com</div>
           <div className="p-pdets">{props.data.phone}+1-800-888-0000</div>
           <div className="p-pdets">{props.data.location}Austin, TX</div>
         </div>
         <div className="work-wrapper">
           <div className="p-w1">Work Experience</div>
+          <div className="divider"></div>
           <div className="p-cname">{props.data.cName}XYZ, Inc.</div>
           <div className="p-cdets">
             {props.data.cDes}Chief Technology Officer
@@ -27,6 +29,7 @@ const Compiler = (props) => {
         </div>
         <div className="edu-wrapper">
           <div className="p-e1">Education</div>
+          <div className="divider"></div>
           <div className="p-ename">
             {props.data.eName}Massachusetts Institute of Technology
           </div>
