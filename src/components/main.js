@@ -16,9 +16,11 @@ class Main extends Component {
   }
 
   handleChange = (e) => {
+    this.setState({ bio: [] });
     this.setState({
       [e.target.name]: e.target.value,
     });
+    this.refs.sbBtn.removeAttribute("disabled");
   };
 
   onSubmitBio = (e) => {
@@ -32,6 +34,7 @@ class Main extends Component {
       ],
     });
     console.log(this.state.bio);
+    this.refs.sbBtn.setAttribute("disabled", "disabled");
   };
 
   render() {
@@ -74,7 +77,7 @@ class Main extends Component {
                   type="text"
                   placeholder="Location"
                 />
-                <button type="submit" className="bio-btn">
+                <button ref="sbBtn" type="submit" className="bio-btn">
                   Save
                 </button>
               </form>

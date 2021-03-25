@@ -5,11 +5,11 @@ const Compiler = (props) => {
   const { bio } = props;
 
   return (
-    <ul>
-      {bio.map((fullName) => {
-        return <li key={uniqid()}>{fullName}</li>;
+    <div className="">
+      {bio.map((bio) => {
+        return <div key={uniqid()}>{bio.fullName}</div>;
       })}
-    </ul>
+    </div>
   );
 };
 
