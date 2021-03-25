@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px) {
+  .parent-wrapper {
+    flex-direction: column;
+  }
+}
+
 .parent-wrapper {
   display: flex;
   justify-content: center;
@@ -6,7 +12,14 @@
 
 .main-wrapper {
   margin: 20px 30px;
-  width: 800px;
+  width: 80%;
+  height: 100%;
+  background: white;
+}
+
+.preview-wrapper {
+  margin: 20px 30px;
+  width: 80%;
   height: 100%;
   background: white;
 }

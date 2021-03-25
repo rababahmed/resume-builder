@@ -2,12 +2,14 @@ import React from "react";
 import uniqid from "uniqid";
 
 const Compiler = (props) => {
+  const { bio } = props;
   return (
-    <div className="parent-wrapper">
-      <div className="main-wrapper">
-        <div className="bio-wrapper">
-          <div className="">Hello</div>
-        </div>
+    <div className="preview-wrapper">
+      <div className="bio-wrapper">
+        <div>{props.data.fullName}</div>
+        <div>{props.data.email}</div>
+        <div>{props.data.phone}</div>
+        <div>{props.data.location}</div>
       </div>
     </div>
   );

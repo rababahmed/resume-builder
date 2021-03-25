@@ -13,12 +13,16 @@ class Main extends Component {
       location: "",
       bio: [],
     };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.onSubmitBio = this.onSubmitBio.bind(this);
   }
 
   handleChange = (e) => {
+    const { name, value } = e.target;
     this.setState({ bio: [] });
     this.setState({
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
     this.refs.sbBtn.removeAttribute("disabled");
   };
@@ -46,8 +50,8 @@ class Main extends Component {
             <div>
               <form onSubmit={this.onSubmitBio} class="bio">
                 <input
-                  onChange={this.handleChange}
                   value={this.state.fullName}
+                  onChange={this.handleChange}
                   name="fullName"
                   className="fname"
                   type="text"
@@ -84,6 +88,7 @@ class Main extends Component {
             </div>
           </div>
         </div>
+        <Compiler data={this.state} />
       </div>
     );
   }
