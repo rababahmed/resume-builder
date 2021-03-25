@@ -136,6 +136,11 @@ input {
   font-size: 26px;
   font-weight: 600;
 }
+.p-w1-2 {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
 
 .p-cname {
   font-size: 22px;

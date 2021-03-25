@@ -68,6 +68,9 @@ class Main extends Component {
             <div className="bio-wrapper">
               <div>
                 <form onSubmit={this.onSubmitBio} class="bio">
+                  <label htmlFor="fullName" class="p-w1">
+                    Personal Details
+                  </label>
                   <input
                     value={this.state.fullName}
                     onChange={this.handleChange}
@@ -100,6 +103,9 @@ class Main extends Component {
                     type="text"
                     placeholder="Location"
                   />
+                  <label htmlFor="cName" className="p-w1-2">
+                    Work Experience
+                  </label>
                   <input
                     onChange={this.handleChange}
                     value={this.state.cName}
@@ -140,6 +146,9 @@ class Main extends Component {
                     type="text"
                     placeholder="Job Details"
                   />
+                  <label htmlFor="eName" class="p-w1-2">
+                    Education
+                  </label>
                   <input
                     onChange={this.handleChange}
                     value={this.state.eName}
@@ -172,7 +181,6 @@ class Main extends Component {
                     type="text"
                     placeholder="Year Ended"
                   />
-
                   <button ref="sbBtn" type="submit" className="bio-btn">
                     Save
                   </button>
