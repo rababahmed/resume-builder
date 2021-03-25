@@ -4,6 +4,20 @@
   }
 }
 
+.print-btn {
+  margin-top: 20px;
+  margin-left: 50%;
+  width: 100px;
+  border: none;
+  outline: none;
+  padding: 8px 0px;
+  border-radius: 10px;
+  background: #273c75;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .parent-wrapper {
   display: flex;
   justify-content: center;
@@ -83,4 +97,75 @@ input {
   color: white;
   font-weight: 400;
   cursor: pointer;
+}
+
+.p-name {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.p-pdets {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.work-wrapper {
+  margin: 40px 0;
+}
+
+.p-w1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.p-cname {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.p-cdets {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.datewrapper {
+  display: flex;
+}
+
+.p-cdate1,
+.p-cdate2 {
+  margin-right: 4px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.edu-wrapper {
+  margin: 40px 0;
+}
+
+.p-e1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.p-ename {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.p-edeg {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.datewrapper {
+  display: flex;
+}
+
+.p-edate1,
+.p-edate2 {
+  margin-right: 4px;
+  font-size: 15px;
+  font-weight: 400;
 }
