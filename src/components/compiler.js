@@ -2,13 +2,13 @@ import React from "react";
 import uniqid from "uniqid";
 
 const Compiler = (props) => {
-  const { bio } = props;
-
   return (
-    <div className="">
-      {bio.map((bio) => {
-        return <div key={uniqid()}>{bio.fullName}</div>;
-      })}
+    <div className="parent-wrapper">
+      <div className="main-wrapper">
+        <div className="bio-wrapper">
+          <div className="">Hello</div>
+        </div>
+      </div>
     </div>
   );
 };

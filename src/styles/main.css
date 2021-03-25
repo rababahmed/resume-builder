@@ -50,3 +50,24 @@ input {
   font-weight: 600;
   cursor: pointer;
 }
+
+.toggle-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 1vh;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  border: none;
+  width: 80px;
+  outline: none;
+  padding: 8px 0px;
+  border-radius: 10px;
+  background: #273c75;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}

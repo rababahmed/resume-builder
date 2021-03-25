@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Main from "./components/main";
+import Switch from "./components/switch";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Main />
+        <Switch />
         <Footer />
       </div>
     );

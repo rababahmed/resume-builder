@@ -82,7 +82,6 @@ class Main extends Component {
                 </button>
               </form>
             </div>
-            <Compiler bio={bio} />
           </div>
         </div>
       </div>
