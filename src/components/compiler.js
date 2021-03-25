@@ -1,10 +1,12 @@
 import React from "react";
 import uniqid from "uniqid";
+import ReactToPdf from "react-to-pdf";
 
 const Compiler = (props) => {
+  const ref = React.createRef();
   return (
     <div className="preview-wrapper">
-      <div className="bio-wrapper">
+      <div ref={ref} className="bio-wrapper">
         <div className="personal-wrapper">
           <div className="p-name">{props.data.fullName}Rabab Ahmed</div>
           <div className="divider"></div>
@@ -42,6 +44,13 @@ const Compiler = (props) => {
           </div>
         </div>
       </div>
+      <ReactToPdf targetRef={ref} filename="resume.pdf">
+        {({ toPdf }) => (
+          <button class="print-btn" onClick={toPdf}>
+            Generate pdf
+          </button>
+        )}
+      </ReactToPdf>
     </div>
   );
 };

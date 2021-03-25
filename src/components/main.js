@@ -63,7 +63,6 @@ class Main extends Component {
     const { fullName, bio } = this.state;
     return (
       <div>
-        <button className="print-btn">Print</button>
         <div className="parent-wrapper">
           <div className="main-wrapper">
             <div className="bio-wrapper">
