@@ -134,8 +134,8 @@ class Main extends Component {
                   />
                   <input
                     onChange={this.handleChange}
-                    value={this.state.eDetails}
-                    name="eDetails"
+                    value={this.state.cDetails}
+                    name="cDetails"
                     className="bio-dets"
                     type="text"
                     placeholder="Job Details"
